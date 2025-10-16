@@ -1,15 +1,18 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
 .contactContainer {
-  text-align: right;
+  padding: $spacing-md 0;
 }
 
 .contact {
-  align-items: center;
-  display: flex;
-  font-weight: bolder;
-  justify-content: end;
-  margin: 4px;
+  @include flex-between;
+  color: $dark-grey;
+  font-weight: 800;
+  justify-content: start;
+  margin: $spacing-sm;
 }
 
 .icon {
-  padding-left: 8px;
+  padding-right: $spacing-md;
 }

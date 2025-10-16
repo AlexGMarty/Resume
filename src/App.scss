@@ -1,19 +1,23 @@
-.root {
-  background-color: #38761d;
-  border: 8px solid #38761d;
-  // min-height: calc(100vh-16px);
+@import "styles/variables";
+@import "styles/mixins";
+
+.appRoot {
+  background-color: $dark-green;
+  border: 8px solid $dark-green;
 }
 
 .header {
-  align-items: center;
-  background-color: #93c47d;
-  // border: 5px solid #38761d;
+  background-color: $light-green;
   color: black;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  // padding: 8px;
-  // max-width: calc(100% - 10px);
-  // font-size: calc(10px + 2vmin);
+}
+
+.top {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .smallIcon {
@@ -22,5 +26,5 @@
 
 .body {
   background-color: white;
-  padding: 8px;
+  padding: $spacing-md;
 }
