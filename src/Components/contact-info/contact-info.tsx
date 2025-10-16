@@ -1,11 +1,11 @@
-import "./contact-info.scss";
+import styles from "./contact-info.module.scss";
 import translations from "../../translations/en";
 
 export default function ContactContainer() {
   return (
-    <div className="contactContainer">
+    <div className={styles.container}>
       <a
-        className="contact"
+        className={styles.contact}
         href="mailto:alex.g.marty@gmail.com"
         aria-label={translations.contact.email}
         target="_blank"
@@ -19,7 +19,7 @@ export default function ContactContainer() {
           stroke="currentColor"
           width="1em"
           height="1em"
-          className="icon"
+          className={styles.icon}
         >
           <path
             strokeLinecap="round"
@@ -30,7 +30,7 @@ export default function ContactContainer() {
         <div>{translations.contact.email}</div>
       </a>
       <a
-        className="contact"
+        className={styles.contact}
         href="https://www.linkedin.com/in/alex-marty/"
         target="_blank"
         rel="noopener noreferrer"
@@ -41,7 +41,7 @@ export default function ContactContainer() {
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
           height="1em"
-          className="icon"
+          className={styles.icon}
         >
           <path
             fill="currentColor"
@@ -59,7 +59,7 @@ export default function ContactContainer() {
         <div>{translations.contact.linkedin}</div>
       </a>
       <a
-        className="contact"
+        className={styles.contact}
         href="https://github.com/AlexGMarty"
         target="_blank"
         rel="noopener noreferrer"
@@ -70,7 +70,7 @@ export default function ContactContainer() {
           xmlns="http://www.w3.org/2000/svg"
           width="1em"
           height="1em"
-          className="icon"
+          className={styles.icon}
         >
           <path
             fill-rule="evenodd"
