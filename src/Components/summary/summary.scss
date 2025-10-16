@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.summary {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: $spacing-sm $spacing-lg;
+}

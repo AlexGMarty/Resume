@@ -1,17 +1,30 @@
-.root {
-  min-height: 100vh;
-  /* text-align: center; */
+@import "styles/variables";
+@import "styles/mixins";
+
+.appRoot {
+  background-color: $dark-green;
+  border: 8px solid $dark-green;
 }
 
 .header {
-  background-color: #282c34;
+  background-color: $light-green;
+  color: black;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.contact {
-  text-align: right;
+.top {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.smallIcon {
+  font-size: small;
+}
+
+.body {
+  background-color: white;
+  padding: $spacing-md;
 }

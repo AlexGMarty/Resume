@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.react {
+  color: $dark-grey;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: $spacing-md;
+  text-align: center;
+}
+
+.seeTheCode {
+  color: $dark-grey;
+}

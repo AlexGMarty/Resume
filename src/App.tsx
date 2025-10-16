@@ -1,23 +1,27 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.scss";
+import ContactInfo from "./Components/contact-info/contact-info";
+import MadeWithReact from "./Components/made-with-react/made-with-react";
+import Summary from "./Components/summary/summary";
+import Title from "./Components/title/title";
+import translations from "./translations/en";
 
 function App() {
   return (
-    <div className="root">
+    <div className="appRoot">
       <header className="header">
-        <div>
-          <h1>Alex Marty</h1>
-          <h3>Software Engineer</h3>
+        <div className="top">
+          <Title
+            name={translations.header.name}
+            title={translations.header.title}
+          />
+          <ContactInfo />
         </div>
-        <div className="contact">
-          <p>alex.g.marty@gmail.com</p>
-          <p>602.803.0135</p>
-          <p>alex-marty</p>
-          <p>AlexGMarty</p>
-        </div>
+        <MadeWithReact />
       </header>
-      <body>Body body</body>
+
+      <main className="body">
+        <Summary />
+      </main>
     </div>
   );
 }
