@@ -4,7 +4,9 @@
 .appRoot {
   background-color: $dark-green;
   border: 8px solid;
-  border-image: linear-gradient(to bottom, $dark-green, $light-green) 1;
+  border-image: linear-gradient(to bottom, $darker-green, $lighter-green) 1;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 .header {
