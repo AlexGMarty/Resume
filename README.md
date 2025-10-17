@@ -2,7 +2,7 @@
 
 This is where all the code lives.
 
-If you meant to visit the actual, pretty version of things, you'll want to go here: [alexgmarty.github.io/resume](https://alexgmarty.github.io/resume)
+If you meant to visit the actual, pretty version of things, you'll want to go here: [alexgmarty.github.io/Resume/](https://alexgmarty.github.io/Resume/)
 
 This resume project is in active development, so it may look different in the future.
 
