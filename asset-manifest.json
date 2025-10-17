@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://alexgmarty.github.io/Resume/static/css/main.eda7ba1f.css",
+    "main.js": "https://alexgmarty.github.io/Resume/static/js/main.1e47684b.js",
+    "static/js/453.b0994b62.chunk.js": "https://alexgmarty.github.io/Resume/static/js/453.b0994b62.chunk.js",
+    "index.html": "https://alexgmarty.github.io/Resume/index.html",
+    "main.eda7ba1f.css.map": "https://alexgmarty.github.io/Resume/static/css/main.eda7ba1f.css.map",
+    "main.1e47684b.js.map": "https://alexgmarty.github.io/Resume/static/js/main.1e47684b.js.map",
+    "453.b0994b62.chunk.js.map": "https://alexgmarty.github.io/Resume/static/js/453.b0994b62.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eda7ba1f.css",
+    "static/js/main.1e47684b.js"
+  ]
+}
