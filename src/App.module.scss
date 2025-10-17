@@ -3,7 +3,10 @@
 
 .appRoot {
   background-color: $dark-green;
-  border: 8px solid $dark-green;
+  border: 8px solid;
+  border-image: linear-gradient(to bottom, $darker-green, $lighter-green) 1;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 .header {
@@ -26,5 +29,5 @@
 
 .body {
   background-color: white;
-  padding: $spacing-md;
+  padding: $spacing-md $spacing-xl;
 }

@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.experience {
+  font-weight: 400;
+}
+
+.oloContainer {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.olo {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.positions {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.position {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding-top: $spacing-md;
+}
+
+.date {
+  font-size: 0.8rem;
+}
+
+.oloSummary {
+  font-size: 1.2rem;
+  padding-top: $spacing-lg;
+  text-align: center;
+}
+
+.keyProjects {
+  font-size: 1.4rem;
+  font-weight: 800;
+  padding-top: $spacing-lg;
+  text-align: center;
+}
+
+.projects {
+  padding-bottom: $spacing-xs;
+}

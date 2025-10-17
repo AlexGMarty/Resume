@@ -1,4 +1,4 @@
-import "./title.scss";
+import styles from "./title.module.scss";
 
 type TitleProps = {
   name: string;
@@ -7,9 +7,9 @@ type TitleProps = {
 
 export default function Title({ name, title }: TitleProps) {
   return (
-    <div className="title-container">
-      <div className="name">{name}</div>
-      <div className="title">{title}</div>
+    <div className={styles.container}>
+      <div className={styles.name}>{name}</div>
+      <div className={styles.title}>{title}</div>
     </div>
   );
 }

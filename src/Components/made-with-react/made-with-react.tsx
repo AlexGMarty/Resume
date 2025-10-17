@@ -1,13 +1,13 @@
-import "./made-with-react.scss";
+import styles from "./made-with-react.module.scss";
 import translations from "../../translations/en";
 
 export default function MadeWithReact() {
   return (
-    <div className="react">
+    <div className={styles.react}>
       {translations.body.react}
       <a
         href="https://github.com/AlexGMarty/Resume"
-        className="seeTheCode"
+        className={styles.seeTheCode}
         target="_blank"
         rel="noopener noreferrer"
       >
