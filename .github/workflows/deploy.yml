@@ -31,9 +31,16 @@ jobs:
         env:
           PUBLIC_URL: https://alexgmarty.github.io/resume/
 
+      - name: List contents of build directory
+        run: |
+          echo "Contents of working directory:"
+          ls -la
+          echo "Contents of build directory:"
+          ls -la build/
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          force_orphan: true  # This will ensure a clean deployment each time
+          force_orphan: true # This will ensure a clean deployment each time
