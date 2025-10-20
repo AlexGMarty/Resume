@@ -1,12 +1,21 @@
 @import "styles/variables";
 @import "styles/mixins";
 
+.wrapper {
+  background: linear-gradient(to bottom, $darker-green, $lighter-green);
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .appRoot {
-  background-color: $dark-green;
   border: 8px solid;
   border-image: linear-gradient(to bottom, $darker-green, $lighter-green) 1;
   box-sizing: border-box;
+  max-width: 1200px;
   min-height: 100vh;
+  min-width: 380px;
 }
 
 .header {
@@ -21,6 +30,10 @@
   align-items: center;
   display: flex;
   justify-content: space-around;
+}
+
+.topMobile {
+  flex-direction: column;
 }
 
 .smallIcon {
