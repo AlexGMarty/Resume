@@ -7,31 +7,38 @@ import MadeWithReact from "./Components/made-with-react/made-with-react";
 import Skills from "./Components/skills/skills";
 import Summary from "./Components/summary/summary";
 import Title from "./Components/title/title";
+import useMedia from "./hooks/useMedia";
 import translations from "./translations/en";
 
 function App() {
-  return (
-    <div className={styles.appRoot}>
-      <header className={styles.header}>
-        <div className={styles.top}>
-          <Title
-            name={translations.header.name}
-            title={translations.header.title}
-          />
-          <ContactInfo />
-        </div>
-        <MadeWithReact />
-      </header>
+  const width = useMedia();
 
-      <main className={styles.body}>
-        <Summary />
-        <BodySectionHeader header={translations.body.experience} />
-        <Experience />
-        <BodySectionHeader header={translations.body.education} />
-        <Education />
-        <BodySectionHeader header={translations.body.skills} />
-        <Skills />
-      </main>
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.appRoot}>
+        <header className={styles.header}>
+          <div
+            className={`${styles.top} ${width < 768 ? styles.topMobile : ""}`}
+          >
+            <Title
+              name={translations.header.name}
+              title={translations.header.title}
+            />
+            <ContactInfo />
+          </div>
+          <MadeWithReact />
+        </header>
+
+        <main className={styles.body}>
+          <Summary />
+          <BodySectionHeader header={translations.body.experience} />
+          <Experience />
+          <BodySectionHeader header={translations.body.education} />
+          <Education />
+          <BodySectionHeader header={translations.body.skills} />
+          <Skills />
+        </main>
+      </div>
     </div>
   );
 }
