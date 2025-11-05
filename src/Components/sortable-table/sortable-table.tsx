@@ -111,8 +111,8 @@ export default function SortableTable() {
       </h3>
       <h3>
         You can view the code here:{" "}
-        <a href="https://github.com/your-repo/sortable-table">
-          github.com/your-repo/sortable-table
+        <a href="https://github.com/AlexGMarty/Resume/tree/main/src/Components/sortable-table">
+          https://github.com/AlexGMarty/Resume/tree/main/src/Components/sortable-table
         </a>
       </h3>
       <table className={styles.table}>
