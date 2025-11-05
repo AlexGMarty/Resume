@@ -104,9 +104,10 @@ export default function SortableTable() {
       </h3>
       <h3>
         I had to modify things a little from what I had to put everything in one
-        file. Sorting by date was a particularly tricky challenge. I will admit,
-        I did have to get a little help from CoPilot to get that part working
-        correctly. Everything else was written by me, though!
+        file. The Skills column is being sorted by the number of skills each
+        user has. Sorting by date was a particularly tricky challenge. I will
+        admit, I did have to get a little help from CoPilot to get that part
+        working correctly. Everything else was written by me, though!
       </h3>
       <h3>
         You can view the code here:{" "}
@@ -130,29 +131,21 @@ export default function SortableTable() {
           </tr>
         </thead>
         <tbody>
-          {sortedUsers.length > 0 ? (
-            sortedUsers.map((user) => (
-              <tr key={user.name} className={styles.tableRow}>
-                <td className={styles.tableCell}>{user.name}</td>
-                <td className={styles.tableCell}>{user.emails}</td>
-                <td className={styles.tableCell}>{user.phone_calls}</td>
-                <td className={styles.tableCell}>
-                  {user.skills && user.skills.length > 0
-                    ? user.skills.join(", ")
-                    : "None"}
-                </td>
-                <td className={styles.tableCell}>
-                  {user.last_login || "Never Logged In"}
-                </td>
-              </tr>
-            ))
-          ) : (
-            <tr>
-              <td colSpan={5} style={{ padding: "10px", textAlign: "center" }}>
-                No data available to display.
+          {sortedUsers.map((user) => (
+            <tr key={user.name} className={styles.tableRow}>
+              <td className={styles.tableCell}>{user.name}</td>
+              <td className={styles.tableCell}>{user.emails}</td>
+              <td className={styles.tableCell}>{user.phone_calls}</td>
+              <td className={styles.tableCell}>
+                {user.skills && user.skills.length > 0
+                  ? user.skills.join(", ")
+                  : "None"}
+              </td>
+              <td className={styles.tableCell}>
+                {user.last_login || "Never Logged In"}
               </td>
             </tr>
-          )}
+          ))}
         </tbody>
       </table>
     </div>
