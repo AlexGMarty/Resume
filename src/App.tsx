@@ -9,13 +9,12 @@ import SortableTable from "./Components/sortable-table/sortable-table";
 import Summary from "./Components/summary/summary";
 import Title from "./Components/title/title";
 import useMedia from "./hooks/useMedia";
+import { useQueryParam } from "./hooks/useQueryParam";
 import translations from "./translations/en";
 
 function App() {
   const width = useMedia();
-  const assembled = new URLSearchParams(window.location.search).has(
-    "assembled"
-  );
+  const assembled = useQueryParam("assembled");
 
   return (
     <div className={styles.wrapper}>
