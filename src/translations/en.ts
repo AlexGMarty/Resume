@@ -32,7 +32,7 @@ export const en = {
     title: "Software Engineer",
   },
   skills: {
-    1: "<strong>Front-end:</strong> TypeScript, React, HTML, JavaScript, CSS, Tailwind, Ember, PlayWright, Vitest, Jest, Figma",
+    1: "<strong>Front-end:</strong> TypeScript, React, Vue, HTML, JavaScript, CSS, Tailwind, Ember, PlayWright, Vitest, Jest, Figma",
     2: "<strong>Back-end:</strong> C#, Python, Java, .NET, SQL, Node.js",
     3: "<strong>Data:</strong> Git, AWS, MixPanel, Looker, Sumo Logic, DataDog, Docker",
   },
